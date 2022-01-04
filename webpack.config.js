@@ -239,6 +239,10 @@ const config = {
   },
   devServer: {
     inline: true,
+    // serve externally
+    host: '0.0.0.0',
+    port: 8080,
+    disableHostCheck: true,
     index: "/static/index.html",
     historyApiFallback: {
       index: "/static/index.html",
